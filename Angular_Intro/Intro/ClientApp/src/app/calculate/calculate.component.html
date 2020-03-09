@@ -1,0 +1,58 @@
+<h1>Hesaplama Sayfasi</h1>
+
+<br />
+<div>
+  <div class="row">
+    <div class="col-sm-4">
+      <label>Ilk Sayi: </label>
+    </div>
+    <div>
+    </div>
+    <div class="col-sm-4">
+      <input [(ngModel)]="sayiBir" type="number" placeholder="Sayi giriniz...">
+    
+    </div>
+  </div>
+  <br />
+  <div class="row">
+    <div class="col-sm-4">
+      <label>Ikinci Sayi: </label>
+    </div>
+    <div class="col-sm-4">
+       <input [(ngModel)]="sayiIki" type="number" placeholder="Sayi giriniz...">
+
+      </div>
+    </div>
+    <br />
+    <div class="row">
+      <div class="col-sm-4">
+        <label>Sonuc: </label>
+      </div>
+      
+      <div class="col-sm-2">
+        <label>{{sonuc}} </label>
+      </div>
+    </div>
+    <br />
+
+    <div class="row">
+      
+      <div class="col-sm-2">
+        <button type="button" (click)="Toplama()" class="btn btn-primary">Toplama (+)</button>
+          </div>
+      
+     
+  <div class="col-sm-2">
+     <button type="button" (click)="Cikarma()" class="btn btn-primary">Cıkarma (−)</button>
+
+  </div>
+          
+  <div class="col-sm-2">
+    <button type="button" (click)="Carpma()"class="btn btn-primary">Carpma (∗)</button>
+
+  </div>
+     
+
+
+    </div>
+  </div>

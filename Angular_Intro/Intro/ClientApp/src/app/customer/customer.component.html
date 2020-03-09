@@ -1,0 +1,28 @@
+<h1>Customer Details</h1>
+
+  <table class="table" *ngIf="customers">
+    <thead>
+      <tr>Id</tr>
+      <tr>Name</tr>
+      <tr>Mail</tr>
+      <tr>Gender</tr>
+      <tr>City</tr>
+      <tr>Country</tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let customer of customers">
+        <td>{{ customer.id }}</td>
+        <td>{{ customer.firstName + " " + customer.lastName }}</td>
+        <td>{{ customer.mail }}</td>
+        <td>{{ customer.gender }}</td>
+        <td>{{ customer.city }}</td>
+        <td>{{ customer.country }}</td>
+      </tr>
+    </tbody>
+
+  </table>
+
+
+
+
+
